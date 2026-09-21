@@ -1,0 +1,30 @@
+Module D — Dashboard & Frontend
+
+This is where users interact with the system.
+
+Different users should see different dashboards.
+
+Manager:
+
+Total Shipments: 250
+Pending: 35
+In Transit: 80
+Delivered: 120
+Delayed: 15
+
+Driver:
+
+My Deliveries
+
+#105   Menouf      In Transit
+#108   Cairo       Pending
+#111   Shebin      Delivered
+
+Customer:
+
+My Shipments
+
+#105
+Status: In Transit
+Driver: Mohamed
+Expected: Tomorrow

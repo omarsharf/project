@@ -1,0 +1,46 @@
+Module E — AI Agent
+
+This is the most important special requirement.
+
+The AI should have tools.
+
+For example:
+
+get_delivery_status()
+get_pending_deliveries()
+get_delayed_deliveries()
+get_available_drivers()
+assign_delivery()
+update_delivery_status()
+
+The AI could receive:
+
+"Show me all delayed deliveries."
+
+and choose:
+
+get_delayed_deliveries()
+
+Or:
+
+"Reassign shipment 105 to an available driver."
+
+The flow becomes:
+
+User
+ ↓
+AI
+ ↓
+assign_delivery(...)
+ ↓
+Django validates user permission
+ ↓
+Django validates shipment + driver
+ ↓
+Database updated
+ ↓
+Result → AI
+ ↓
+User
+
+The specification specifically says AI tools need identity binding, permission checks, parameter validation, and confirmation for destructive actions.
